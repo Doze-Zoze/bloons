@@ -1,0 +1,12 @@
+.cell {
+    border: solid black 1px;
+    padding: 5px;
+    text-align: center;
+}
+
+.table {
+    border: solid black 1px;
+    padding: 5px;
+    display: grid;
+    grid-template-columns: repeat(9, 1fr);
+}
