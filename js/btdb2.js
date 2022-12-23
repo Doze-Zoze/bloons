@@ -241,7 +241,7 @@ var bloons = [
     }
 ]
 for (var i = 0; i < bloons.length; i++) {
-    for (var i2 = 0; i2 < 9; i2++) {
+    for (var i2 = 0; i2 < 10; i2++) {
         document.getElementById("table").appendChild(
             Object.assign(
                 document.createElement('div'),
@@ -254,25 +254,26 @@ for (var i = 0; i < bloons.length; i++) {
             )
         );
     }
-    bloons[i].EPS = bloons[i].eco / (bloons[i].delay * bloons[i].amount)
+    bloons[i].EPS = Math.round((bloons[i].eco / (bloons[i].delay * bloons[i].amount))*100)/100
+    bloons[i].sustainable = Math.round((6 / (bloons[i].delay * bloons[i].amount) * bloons[i].cost)*100)/100
     if (bloons[i].eco > 0) {
         console.log(bloons[i].cost)
-        bloons[i].efficiency = bloons[i].cost / bloons[i].eco * 6
-    }
-    bloons[i].sustainable = 6 / (bloons[i].delay * bloons[i].amount) * bloons[i].cost
+        bloons[i].efficiency = Math.round((bloons[i].cost / bloons[i].eco * 6)*100)/100
+    } else { bloons[i].efficiency = "N/A"}
     }
 
-bloons.sort(function(a ,b) {
-    var keyA = a.sustainable,
-    keyB = b.sustainable;
+bloons = bloons.sort(function(a ,b) {
+    var keyA = a.EPS,
+    keyB = b.EPS;
     return ((keyA < keyB) ? -1 : ((keyA > keyB) ? 1 : 0))
-})
+}).reverse()
+console.log(bloons)
 
 for (var i = 0; i < bloons.length; i++) {
     var send = Object.entries(bloons[i])
     document.getElementById(String(i)+"x0").innerHTML = String(send[0][1])
     document.getElementById(String(i)+"x1").innerHTML = (String(send[1][1]) + " - " + String(send[2][1]))
-    for (var i2 = 3; i2 < 10; i2++) {
+    for (var i2 = 3; i2 < 11; i2++) {
         document.getElementById(String(i)+"x"+String(i2-1)).innerHTML = String(send[i2][1])
     }
 }
