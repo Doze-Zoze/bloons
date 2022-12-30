@@ -1,6 +1,6 @@
 var bloons = [
     {
-        name:"Grouped Red",
+        name:["Grouped Red","BTD6Red2.webp",0],
         startRound:1,
         endRound:11,
         cost:20,
@@ -10,17 +10,17 @@ var bloons = [
         rbe:1
     },
     {
-        name:"Spaced Blue",
+        name:["Spaced Blue","BTD6Blue.webp",1],
         startRound:1,
         endRound:2,
         cost:15,
         amount:5,
         delay:0.3,
         eco:1.0,
-        rbe:1
+        rbe:2
     },
     {
-        name:"Grouped Blue",
+        name:["Grouped Blue","BTD6Blue2.webp",2],
         startRound:3,
         endRound:12,
         cost:24,
@@ -30,7 +30,7 @@ var bloons = [
         rbe:2
     },
     {
-        name:"Spaced Green",
+        name:["Spaced Green","BTD6Green.webp",3],
         startRound:2,
         endRound:4,
         cost:18,
@@ -40,7 +40,7 @@ var bloons = [
         rbe:3
     },
     {
-        name:"Grouped Green",
+        name:["Grouped Green","BTD6Green2.webp",4],
         startRound:4,
         endRound:16,
         cost:35,
@@ -50,17 +50,17 @@ var bloons = [
         rbe:3
     },
     {
-        name:"Spaced Yellow",
+        name:["Spaced Yellow","BTD6Yellow.webp",5],
         startRound:3,
         endRound:6,
         cost:24,
         amount:5,
-        delay:0.06,
+        delay:0.23,
         eco:0.23,
         rbe:4
     },
     {
-        name:"Grouped Yellow",
+        name:["Grouped Yellow","BTD6Yellow2.webp",6],
         startRound:7,
         endRound:19,
         cost:40,
@@ -70,7 +70,7 @@ var bloons = [
         rbe:4
     },
     {
-        name:"Spaced Pink",
+        name:["Spaced Pink","BTD6Pink.webp",7],
         startRound:4,
         endRound:8,
         cost:28,
@@ -80,7 +80,7 @@ var bloons = [
         rbe:5
     },
     {
-        name:"Grouped Pink",
+        name:["Grouped Pink","BTD6Pink2.webp",8],
         startRound:9,
         endRound:50,
         cost:60,
@@ -90,7 +90,7 @@ var bloons = [
         rbe:5
     },
     {
-        name:"Spaced White",
+        name:["Spaced White","BTD6White.webp",9],
         startRound:5,
         endRound:9,
         cost:30,
@@ -100,7 +100,7 @@ var bloons = [
         rbe:11
     },
     {
-        name:"Grouped White",
+        name:["Grouped White","BTD6White2.webp",10],
         startRound:10,
         endRound:21,
         cost:65,
@@ -110,7 +110,7 @@ var bloons = [
         rbe:11
     },
     {
-        name:"Spaced Black",
+        name:["Spaced Black","BTD6Black.webp",11],
         startRound:6,
         endRound:9,
         cost:33,
@@ -120,7 +120,7 @@ var bloons = [
         rbe:11
     },
     {
-        name:"Grouped Black",
+        name:["Grouped Black","BTD6Black2.webp",12],
         startRound:10,
         endRound:25,
         cost:75,
@@ -130,7 +130,7 @@ var bloons = [
         rbe:11
     },
     {
-        name:"Spaced Purple",
+        name:["Spaced Purple","BTD6Purple.webp",13],
         startRound:8,
         endRound:10,
         cost:70,
@@ -140,7 +140,7 @@ var bloons = [
         rbe:11
     },
     {
-        name:"Grouped Purple",
+        name:["Grouped Purple","BTD6Purple2.webp",14],
         startRound:11,
         endRound:50,
         cost:115,
@@ -150,7 +150,7 @@ var bloons = [
         rbe:11
     },
     {
-        name:"Spaced Zebra",
+        name:["Spaced Zebra","BTD6Purple.webp",15],
         startRound:9,
         endRound:10,
         cost:60,
@@ -160,7 +160,7 @@ var bloons = [
         rbe:23
     },
     {
-        name:"Grouped Zebra",
+        name:["Grouped Zebra","BTD6Zebra2.webp",16],
         startRound:11,
         endRound: 29,
         cost: 120,
@@ -170,7 +170,7 @@ var bloons = [
         rbe:23
     },
     {
-        name:"Spaced Lead",
+        name:["Spaced Lead","BTD6Lead.webp",17],
         startRound:10,
         endRound:11,
         cost:60,
@@ -180,7 +180,7 @@ var bloons = [
         rbe:23
     },
     {
-        name:"Grouped Lead",
+        name:["Grouped Lead","BTD6Lead2.webp",18],
         startRound:12,
         endRound:50,
         cost:160,
@@ -190,7 +190,7 @@ var bloons = [
         rbe:23
     },
     {
-        name:"Spaced Rainbow",
+        name:["Spaced Rainbow","BTD6Rainbow.webp",19],
         startRound:12,
         endRound:12,
         cost:80,
@@ -200,7 +200,7 @@ var bloons = [
         rbe:47
     },
     {
-        name:"Grouped Rainbow",
+        name:["Grouped Rainbow","BTD6Rainbow2.webp",20],
         startRound:13,
         endRound:50,
         cost:250,
@@ -210,7 +210,7 @@ var bloons = [
         rbe:47
     },
     {
-        name:"Spaced Ceramic",
+        name:["Spaced Ceramic","BTD6Ceramic.webp",21],
         startRound:13,
         endRound:15,
         cost:150,
@@ -220,7 +220,7 @@ var bloons = [
         rbe:104
     },
     {
-        name:"Grouped Ceramic",
+        name:["Grouped Ceramic","BTD6Ceramic2.webp",22],
         startRound:16,
         endRound:27,
         cost:400,
@@ -230,7 +230,7 @@ var bloons = [
         rbe:104
     },
     {
-        name:"Tight Ceramic",
+        name:["Tight Ceramic","BTD6Ceramic3.webp",23],
         startRound:28,
         endRound:50,
         cost:4000,
@@ -240,6 +240,8 @@ var bloons = [
         rbe:104
     }
 ]
+
+var reverseSort = [false,true];
 for (var i = 0; i < bloons.length; i++) {
     for (var i2 = 0; i2 < 10; i2++) {
         document.getElementById("table").appendChild(
@@ -254,6 +256,18 @@ for (var i = 0; i < bloons.length; i++) {
             )
         );
     }
+    document.getElementById(String(i)+"x0").parentElement.appendChild(
+        Object.assign(
+            document.createElement('div'),
+            {classList:"imgContainer"}
+        ).appendChild(
+            Object.assign(
+                document.createElement('img'),
+            {classList:"img",
+            id: String(i)+"img"}
+            )
+        )
+    )
     bloons[i].EPS = Math.round((bloons[i].eco / (bloons[i].delay * bloons[i].amount))*100)/100
     bloons[i].sustainable = Math.round((6 / (bloons[i].delay * bloons[i].amount) * bloons[i].cost)*100)/100
     if (bloons[i].eco > 0) {
@@ -262,18 +276,54 @@ for (var i = 0; i < bloons.length; i++) {
     } else { bloons[i].efficiency = "N/A"}
     }
 
-bloons = bloons.sort(function(a ,b) {
-    var keyA = a.EPS,
-    keyB = b.EPS;
-    return ((keyA < keyB) ? -1 : ((keyA > keyB) ? 1 : 0))
-}).reverse()
-console.log(bloons)
+document.getElementById("Bloons").addEventListener("click", function(){sort("id")});
+document.getElementById("Rounds").addEventListener("click", function(){sort("startRound")});
+document.getElementById("Cost").addEventListener("click", function(){sort("cost")});
+document.getElementById("Amount").addEventListener("click", function(){sort("amount")});
+document.getElementById("Delay").addEventListener("click", function(){sort("delay")});
+document.getElementById("Eco").addEventListener("click", function(){sort("eco")});
+document.getElementById("RBE").addEventListener("click", function(){sort("rbe")});
+document.getElementById("EPS").addEventListener("click", function(){sort("EPS")});
+document.getElementById("Sustainable").addEventListener("click", function(){sort("sustainable")});
+document.getElementById("Efficiency").addEventListener("click", function(){sort("efficiency")});
+document.getElementById("ReverseSort").addEventListener("click", reverseSortDir);
 
-for (var i = 0; i < bloons.length; i++) {
-    var send = Object.entries(bloons[i])
-    document.getElementById(String(i)+"x0").innerHTML = String(send[0][1])
-    document.getElementById(String(i)+"x1").innerHTML = (String(send[1][1]) + " - " + String(send[2][1]))
-    for (var i2 = 3; i2 < 11; i2++) {
-        document.getElementById(String(i)+"x"+String(i2-1)).innerHTML = String(send[i2][1])
-    }
+function reverseSortDir() {
+    reverseSort.reverse()
+    bloons.reverse()
+    print()
 }
+function sort(key="id") {
+    if (key == "id") {
+        bloons = bloons.sort(function(a ,b) {
+            var keyA = a["name"][2],
+            keyB = b["name"][2];
+            return ((keyA < keyB) ? -1 : ((keyA > keyB) ? 1 : 0))
+        })
+    } else {
+        bloons = bloons.sort(function(a ,b) {
+            var keyA = a[key],
+            keyB = b[key];
+            return ((keyA < keyB) ? -1 : ((keyA > keyB) ? 1 : 0))
+        })
+    }
+    
+    if (reverseSort[0] == true) {bloons.reverse()};
+    print();
+}
+function print() {
+    for (var i = 0; i < bloons.length; i++) {
+        var send = Object.entries(bloons[i])
+        document.getElementById(String(i)+"x0").innerHTML = String(send[0][1][0]);
+        document.getElementById(String(i)+"x0").classList = "name";
+        document.getElementById(String(i)+"x0").parentElement.classList = "nameCell cell";
+
+        document.getElementById(String(i)+"img").src = "img/"+String(send[0][1][1]);
+        document.getElementById(String(i)+"x1").innerHTML = (String(send[1][1]) + " - " + String(send[2][1]))
+        for (var i2 = 3; i2 < 11; i2++) {
+            document.getElementById(String(i)+"x"+String(i2-1)).innerHTML = String(send[i2][1])
+        }
+}
+}
+
+print()
